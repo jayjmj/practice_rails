@@ -57,6 +57,6 @@ Lionbook::Application.routes.draw do
   get 'home/hello' => 'home#hello'
 
   get 'email/email_form' => 'email#email_form'
-  get 'email/email_send' => 'email#email_send'
+  post 'email/email_send' => 'email#email_send'
 
 end
