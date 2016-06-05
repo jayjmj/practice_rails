@@ -1,4 +1,9 @@
 Lionbook::Application.routes.draw do
+  
+  get "home/list" => 'home#list'
+  get "home/add" => 'home#add'
+  post "home/add_process" => 'home#add_process'
+  
   get "wall/write" => 'wall#write'
   post "wall/posts" => 'wall#posts'
   # The priority is based upon order of creation: first created -> highest priority.
