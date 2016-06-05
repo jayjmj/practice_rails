@@ -1,4 +1,12 @@
 Lionbook::Application.routes.draw do
+  
+  get "home/list" => 'home#list'
+  get "home/add" => 'home#add'
+  post "home/add_process" => 'home#add_process'
+  
+  get "wall/write"
+  post "wall/write_complete"
+  get "wall/posts"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
